@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Vcriate Bank</title>
+
+	<style>
+		input[type=text],
+		input[type=email],
+		input[type=password] {
+			width: 100%;
+			padding: 15x;
+			margin: 5px 0 22px 0;
+			display: inline-block;
+			border-style: groove;
+		}
+
+		input[type=email]:focus,
+		input[type=password]:focus {
+			background-color: #ddd;
+
+		}
+	</style>
+</head>
+
+<body>
+
+	<div style=" height:500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;">
+		<form style="border:1px solid #ccc; padding: 5%;width:70%; max-width:400px; " id="loginform"
+			action="javascript:void(0);">
+			<center>
+				<p id="msg"></p>
+				<h1>Login</h1>
+				<a title="" style="text-decoration:none;" href="/register"><span>Sign Up Here?</span><sub
+						style='font-size:25px;'>&#10548;</sub></a>
+			</center>
+			<div class="inputs">
+				<hr>
+				<label for="email"><b>Email</b></label><br>
+				<input type="email" placeholder="Enter Email" name="email">
+				<hr>
+				<label for="email"><b>Email</b></label><br>
+				<input type="email" placeholder="Enter Email" name="email">
+				<hr
+			</div>
+			<div>
+				<button type="reset">Cancel</button>
+				<button onclick="loginCustomer()">Log In</button>
+
+			</div>
+		</form>
+
+	</div>
+
+	<button onclick="getLocation()">Try It</button>
+
+	<p id="user-position"></p>
+
+	<script src="../static/javascript/path.js"></script>
+	<script src="../static/PageFunctionality/getLocation.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vcriate Bank</title>
+
+
+  <style>
+		input[type=text],
+		input[type=email],
+		input[type=password] {
+			width: 100%;
+			padding: 15x;
+			margin: 5px 0 22px 0;
+			display: inline-block;
+			border-style: groove;
+		}
+
+		input[type=text]:focus,
+		input[type=email]:focus,
+		input[type=password]:focus {
+			background-color: #ddd;
+
+		}
+	</style>
+</head>
+
+<body>
+
+<div style=" height:500px;
+            display: flex;
+            justify-content: center;
+            margin-top:5%;
+            align-items: center;
+            flex-direction: row;">
+  <br>
+  <form style="border:1px solid #ccc; padding: 5%;width:70%; max-width:400px; "  id="registerForm" action="javascript:void(0);">
+    <center>
+      <p id="msg"></p>
+      <h1>Register</h1>
+      <a title="" style="text-decoration:none;" href="./login.html"><span>Login Here?</span><sub
+              style='font-size:25px;'>&#10548;</sub></a>
+    </center>
+    <div class="inputs">
+      <hr>
+      <label for="name"><b>Name</b></label><br>
+      <input type="text" placeholder="Enter Name" name="name" >
+      <hr>
+      <label for="email"><b>Email</b></label><br>
+      <input type="email" placeholder="Enter Email" name="email" >
+      <hr>
+      <label for="password"><b>Password</b></label><br>
+      <input type="password" placeholder="Enter Password" name="password" >
+      <hr>
+      <label for="password"><b>Confirm Password</b></label><br>
+      <input type="password" placeholder="Enter Password" name="confirm-password">
+      <hr>
+    </div>
+    <div>
+      <button type="reset">Cancel</button>
+      <button onclick="registerCustomer()">Register</button>
+    </div>
+  </form>
+</div>
+
+
+<script src="../static/javascript/path.js"></script>
+<script src="../static/PageFunctionality/login.js"></script>
+</body>
+
+</html>

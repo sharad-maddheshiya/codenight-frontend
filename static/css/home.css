@@ -1,0 +1,39 @@
+* {
+  font-family: "archia";
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+
+  scroll-behavior: smooth;
+}
+
+table,
+th,
+td {
+  border: 1px solid Black;
+  padding: 5px 5px 5px 5px;
+  margin-bottom: 25px;
+  text-align: center;
+  background-color: rgb(229, 229, 229);
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"] {
+  width: 100%;
+  padding: 15x;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border-style: groove;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus {
+  background-color: #ddd;
+}
